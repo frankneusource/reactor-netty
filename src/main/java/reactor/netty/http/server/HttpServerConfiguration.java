@@ -26,6 +26,7 @@ import io.netty.util.AttributeKey;
 import reactor.netty.http.HttpProtocol;
 
 /**
+ * 配置了四种不同类型的ServerBootstrap
  * @author Stephane Maldini
  */
 final class HttpServerConfiguration {

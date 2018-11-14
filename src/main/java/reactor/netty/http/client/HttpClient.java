@@ -56,6 +56,8 @@ import reactor.netty.tcp.SslProvider;
 import reactor.netty.tcp.TcpClient;
 
 /**
+ * httpclient用于使用netty处理http请求。
+ * 实例化过程首先调用tcpConfiguration方法进行连接实例初始化，接下来调用TcpClient.configure()方法，最后TcpClient.connect()进行连接绑定操作
  * An HttpClient allows to build in a safe immutable way an http client that is
  * materialized and connecting when {@link TcpClient#connect()} is ultimately called.
  * <p> Internally, materialization happens in three phases, first {@link #tcpConfiguration()}

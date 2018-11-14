@@ -97,6 +97,11 @@ final class HttpServerBind extends HttpServer
 		               .map(CLEANUP_GLOBAL_RESOURCE);
 	}
 
+	/**
+	 * 实际进行连接与netty底层信息绑定的方法
+	 * @param b
+	 * @return
+	 */
 	@Override
 	public ServerBootstrap apply(ServerBootstrap b) {
 		HttpServerConfiguration conf = HttpServerConfiguration.getAndClean(b);

@@ -296,6 +296,7 @@ public abstract class TcpClient {
 	}
 
 	/**
+	 * 将一个处理IO的handler关联上netty的reactor
 	 * Attach an IO handler to react on connected client
 	 *
 	 * @param handler an IO handler that can dispose underlying connection when {@link
@@ -590,6 +591,7 @@ public abstract class TcpClient {
 	}
 
 	/**
+	 * 默认netty端口，可以通过配置环境变量PORT修改
 	 * The default port for reactor-netty servers. Defaults to 12012 but can be tuned via
 	 * the {@code PORT} <b>environment variable</b>.
 	 */
